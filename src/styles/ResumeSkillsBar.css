@@ -1,0 +1,99 @@
+.skills__cont{
+   flex-direction: column;
+   width: 100%;
+}
+.skillsbar__wrap{
+   margin: 0px auto;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+.skillsbar__container{
+   margin: 20px 0px;
+   display: flex;
+   align-items: center;
+   width: 40%;
+   height: 100%;
+}
+.skillsbar__item{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+.skillsbar__item-title{
+   width: 100%;
+   color: white;
+}
+.skillsbar__item-progress-wrap{
+   width: 100%;
+   height: 7px;
+   width: 100%;
+   background:#141618;
+   border-radius: 10px;
+}
+.skillsbar__item-percent{
+   color: white;
+}
+.skillsbar__item-progress-bar{
+   height: 100%;
+   background: linear-gradient(90deg, rgba(172,0,255,1) 0%, rgba(14,0,255,1) 57%, rgba(0,212,255,1) 100%);
+   animation: showBar 1s ease-in 0s 1 normal none;
+   border-radius: 10px;
+}
+.soft__wrap{
+   margin-top: 80px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   flex-wrap: wrap;
+}
+.soft__wrap h3{
+   text-transform: uppercase;
+   color: #fff;
+}
+.soft__cont{
+   width: 100%;
+   justify-content: center;
+   display: flex;
+   flex-wrap: wrap;
+}
+.soft__item{
+   margin: 20px 0px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 25%;
+   color: #fff;
+   text-transform: uppercase;
+}
+
+@keyframes showBar{
+   from{
+      width: 0%;
+   }
+   to{
+      width: 100%;
+   }
+}
+@media screen and (max-width: 1000px) {
+   .skillsbar__container {
+      width: 80%;
+   }
+}
+@media screen and (max-width: 550px) {
+   .soft__cont{
+      padding: 0px 20px;
+   }
+   .soft__item {
+      margin: 20px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      color: #fff;
+      text-transform: uppercase;
+   }
+}

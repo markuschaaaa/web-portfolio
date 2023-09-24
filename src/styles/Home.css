@@ -1,0 +1,110 @@
+.home__wrapper{
+   margin: 0px auto;
+   width: 100%;
+   /* height: 100svh; */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: linear-gradient(0deg, rgba(76, 76, 76, 1) 0%, rgba(0, 0, 0, 1) 80%);
+}
+.home__container{
+   margin: 0px auto;
+   padding: 0px 20px;
+   width: 100%;
+   height: 100%;
+   max-width: 1400px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+
+}
+.home__img-box{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.home__text-item{
+   font-family: 'Oswald', sans-serif;
+}
+.home__text-item:nth-child(1){
+   color: #D1D5DB;
+   font-size: 18px;
+   letter-spacing: 3px;
+}
+.home__text-item:nth-child(2) {
+   color: #D1D5DB;
+   font-size: 48px;
+   font-weight: 700;
+   letter-spacing: 4px;
+}
+#home__name{
+   color: #FF014F;
+   font-size: 48px;
+   font-weight: 700;
+   letter-spacing: 4px;
+}
+
+.home__text-item:nth-child(4) {
+   color: #D1D5DB;
+   margin-top: 100px;
+   font-size: 18px;
+   letter-spacing: 3px;
+   text-align: justify;
+   text-shadow: 0px 3.5px 0px #ff0059;
+   animation: flashing-shadow 1.5s infinite linear;
+}
+.home__text-item-swollow{
+   padding-right: 5px;
+   display: inline;
+   width: fit-content;
+   color: #D1D5DB;
+   font-size: 36px;
+   font-weight: 700;
+   /* white-space: nowrap; */
+   letter-spacing: 1px;
+   overflow: hidden;
+   border-right: 4px solid #fff;
+   animation: flashing-border 0.75s step-end infinite;
+}
+@keyframes flashing-border{
+   0%{
+      border-color: white;
+   }
+   50%{
+      border-color: transparent;
+   }
+   100%{
+      border-color: white;
+   }
+}
+@keyframes flashing-shadow {
+   0% {
+      text-shadow: 0px 3.5px 0px #ff0059;
+   }
+
+   50% {
+      text-shadow: 0px 0px 0px #ff0059;
+   }
+
+   100% {
+      text-shadow: 0px 3.5px 0px #ff0059;
+   }
+}
+
+@media (max-width: 900px) {
+   .home__container{
+      flex-wrap: wrap;
+   }
+   .home__img-box img{
+      width: 80%;
+   }
+   .home__text-box{
+      padding: 0px 50px;
+   }
+   .skills__wrapper{
+      flex-wrap: wrap;
+   }
+   .skills__container {
+      height: 40%;
+   }
+}
